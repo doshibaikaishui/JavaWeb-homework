@@ -1,13 +1,3 @@
-~~~
-
-13-Oct-2024 18:18:35.611 信息 [http-nio-8080-exec-1] org.example.ServletRequestListener.requestInitialized 请求初始化: 时间: 2024-10-13T18:18:35.610054300, 客户端IP: 127.0.0.1, 请求方法: GET, 请求URI: /listener/, 用户代理: IntelliJ IDEA/241.14494.240
-13-Oct-2024 18:18:36.196 信息 [http-nio-8080-exec-1] org.example.ServletRequestListener.requestDestroyed 请求结束: 时间: 2024-10-13T18:18:36.196003300, 处理时间: 585 毫秒
-13-Oct-2024 18:18:36.263 信息 [http-nio-8080-exec-3] org.example.ServletRequestListener.requestInitialized 请求初始化: 时间: 2024-10-13T18:18:36.263085100, 客户端IP: 0:0:0:0:0:0:0:1, 请求方法: GET, 请求URI: /listener/, 用户代理: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0
-13-Oct-2024 18:18:36.264 信息 [http-nio-8080-exec-3] org.example.ServletRequestListener.requestDestroyed 请求结束: 时间: 2024-10-13T18:18:36.264083500, 处理时间: 0 毫秒
-13-Oct-2024 18:18:38.108 信息 [http-nio-8080-exec-4] org.example.ServletRequestListener.requestInitialized 请求初始化: 时间: 2024-10-13T18:18:38.108036700, 客户端IP: 0:0:0:0:0:0:0:1, 请求方法: GET, 请求URI: /listener/hello-servlet, 用户代理: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0
-13-Oct-2024 18:18:38.109 信息 [http-nio-8080-exec-4] org.example.ServletRequestListener.requestDestroyed 请求结束: 时间: 2024-10-13T18:18:38.109039500, 处理时间: 1 毫秒
-~~~
-
 ## HTTP监听器
 
 本项目实现基于 **Servlet Listener** 的需求日志监听器，监听所有的HTTP请求并返回相应信息。
@@ -71,6 +61,18 @@
 - **请求 URI**：请求的统一资源标识符。
 - **查询字符串**：如果请求包含查询参数，记录查询字符串。
 - **用户代理**：请求发起时客户端的用户代理信息。
+
+~~~
+
+13-Oct-2024 18:18:35.611 信息 [http-nio-8080-exec-1] org.example.ServletRequestListener.requestInitialized 请求初始化: 时间: 2024-10-13T18:18:35.610054300, 客户端IP: 127.0.0.1, 请求方法: GET, 请求URI: /listener/, 用户代理: IntelliJ IDEA/241.14494.240
+13-Oct-2024 18:18:36.196 信息 [http-nio-8080-exec-1] org.example.ServletRequestListener.requestDestroyed 请求结束: 时间: 2024-10-13T18:18:36.196003300, 处理时间: 585 毫秒
+13-Oct-2024 18:18:36.263 信息 [http-nio-8080-exec-3] org.example.ServletRequestListener.requestInitialized 请求初始化: 时间: 2024-10-13T18:18:36.263085100, 客户端IP: 0:0:0:0:0:0:0:1, 请求方法: GET, 请求URI: /listener/, 用户代理: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0
+13-Oct-2024 18:18:36.264 信息 [http-nio-8080-exec-3] org.example.ServletRequestListener.requestDestroyed 请求结束: 时间: 2024-10-13T18:18:36.264083500, 处理时间: 0 毫秒
+13-Oct-2024 18:18:38.108 信息 [http-nio-8080-exec-4] org.example.ServletRequestListener.requestInitialized 请求初始化: 时间: 2024-10-13T18:18:38.108036700, 客户端IP: 0:0:0:0:0:0:0:1, 请求方法: GET, 请求URI: /listener/hello-servlet, 用户代理: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0
+13-Oct-2024 18:18:38.109 信息 [http-nio-8080-exec-4] org.example.ServletRequestListener.requestDestroyed 请求结束: 时间: 2024-10-13T18:18:38.109039500, 处理时间: 1 毫秒
+~~~
+
+
 
 ---
 
